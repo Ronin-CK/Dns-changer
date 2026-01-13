@@ -1,4 +1,4 @@
-# DNS Changer (NetworkManager)
+# DNS Changer
 
 A lightweight interactive Bash script for Linux that allows you to **view and change system DNS servers** using NetworkManager (`nmcli`).  
 Designed for simplicity, transparency, and quick DNS switching without editing config files manually.
