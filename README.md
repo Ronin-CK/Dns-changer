@@ -1,62 +1,58 @@
-# DNS Changer
+# DNS Changer 🌐
 
-A lightweight interactive Bash script for Linux that allows you to **view and change system DNS servers** using NetworkManager (`nmcli`).  
-Designed for simplicity, transparency, and quick DNS switching without editing config files manually.
+A lightweight, interactive Bash script for Linux that allows you to **view and change system DNS servers** using NetworkManager (`nmcli`).
+Designed for simplicity, transparency, and quick DNS switching without manually editing configuration files.
 
----
-
-## Features
-
-- Detects the active network device and connection automatically
-- Displays currently active DNS servers with provider names
-- Quickly switch between popular public DNS providers:
-  - Google
-  - Cloudflare
-  - Quad9
-  - OpenDNS
-  - AdGuard
-- Supports custom DNS input
-- Applies changes immediately by restarting the active connection
-- No external dependencies beyond NetworkManager
+![Bash](https://img.shields.io/badge/Language-Bash-4EAA25.svg?logo=gnu-bash&logoColor=white)
+![Linux](https://img.shields.io/badge/OS-Linux-FCC624.svg?logo=linux&logoColor=black)
+![NetworkManager](https://img.shields.io/badge/Dependency-NetworkManager-blue)
 
 ---
 
-## Requirements
+## ✨ Features
 
-- Linux system using **NetworkManager**
-- `nmcli` available (usually preinstalled on most desktop distros)
-- Root privileges (`sudo`)
-
-This script will **not work** on systems that do not use NetworkManager  
-(e.g. systems managed purely by `systemd-resolved`, `netplan` without NM, or minimal servers).
+* **Auto-Detection:** Automatically identifies the active network device and current connection.
+* **Live Status:** Displays currently active DNS servers and provider names.
+* **Quick Switcher:** Instantly apply popular public DNS providers:
+    * Google
+    * Cloudflare
+    * Quad9
+    * OpenDNS
+    * AdGuard
+* **Custom Control:** Supports manual entry for custom DNS IPs.
+* **Instant Apply:** Restarts the connection automatically to apply changes immediately.
+* **Zero Bloat:** No external dependencies beyond `nmcli`.
 
 ---
 
-## Installation
+## ⚠️ Requirements
 
-Clone the repository:
+* A Linux system using **NetworkManager**.
+* `nmcli` installed (standard on most desktop distros like Fedora, Ubuntu, Arch, etc.).
+* Root privileges (`sudo`).
 
-```bash
-git clone https://github.com/Ronin-CK/Dns-changer.git
-cd Dns-changer
-```
-### Make the script executable:
-```bash
-chmod +x dns-changer.sh
-```
+> **Note:** This script will **not work** on systems managed purely by `systemd-resolved`, `netplan` (without NM), or minimal server environments lacking NetworkManager.
 
-### Usage
+---
 
-Run the script as root:
+## 🚀 Installation
+
+1.  **Clone the repository:**
+    ```bash
+    git clone [https://github.com/Ronin-CK/Dns-changer.git](https://github.com/Ronin-CK/Dns-changer.git)
+    cd Dns-changer
+    ```
+
+2.  **Make the script executable:**
+    ```bash
+    chmod +x dns-changer.sh
+    ```
+
+---
+
+## 🎮 Usage
+
+Run the script with root privileges to allow network modification:
+
 ```bash
 sudo ./dns-changer.sh
-```
-## Safety Notes
-
-  - DNS changes are system-wide
-
-  - Changes persist until modified again
-
-  - Incorrect DNS values may break network connectivity
-
-  - Always ensure you know how to revert changes (rerun the script or reset to automatic)
