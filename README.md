@@ -20,7 +20,6 @@ Designed for simplicity, transparency, and quick DNS switching without manually 
     * OpenDNS
     * AdGuard
 * **Custom Control:** Supports manual entry for custom DNS IPs.
-* **Instant Apply:** Restarts the connection automatically to apply changes immediately.
 * **Zero Bloat:** No external dependencies beyond `nmcli`.
 
 ---
