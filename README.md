@@ -39,3 +39,15 @@ Clone the repository:
 ```bash
 git clone https://github.com/Ronin-CK/Dns-changer.git
 cd Dns-changer
+```
+### Make the script executable:
+```bash
+chmod +x dns-changer.sh
+```
+
+### Usage
+
+Run the script as root:
+```bash
+sudo ./dns-changer.sh
+```
