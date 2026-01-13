@@ -37,5 +37,5 @@ This script will **not work** on systems that do not use NetworkManager
 Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/dns-changer.git
+git clone https://github.com/Ronin-CK/Dns-changer.git
 cd dns-changer
