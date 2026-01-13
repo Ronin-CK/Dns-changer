@@ -38,4 +38,4 @@ Clone the repository:
 
 ```bash
 git clone https://github.com/Ronin-CK/Dns-changer.git
-cd dns-changer
+cd Dns-changer
