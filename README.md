@@ -51,3 +51,12 @@ Run the script as root:
 ```bash
 sudo ./dns-changer.sh
 ```
+## Safety Notes
+
+  - DNS changes are system-wide
+
+  - Changes persist until modified again
+
+  - Incorrect DNS values may break network connectivity
+
+  - Always ensure you know how to revert changes (rerun the script or reset to automatic)
